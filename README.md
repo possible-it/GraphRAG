@@ -36,6 +36,7 @@
 
 - Download the datasets [GraphRAG-dataset](https://drive.google.com/file/d/14nYYw-3FutumQnSRwKavIbG3LRSmIzDX/view?usp=sharing)
 
+- **🏥 Medical Dataset Conversion**: See [Medical Dataset Guide](./Data/MEDICAL_README.md) for converting medical datasets (PubMedQA, MedQA, etc.) to GraphRAG format
 
 
 
@@ -244,6 +245,29 @@ You can freely 🪽 combine those operators 🧩 to create more and more GraphRA
 | **LightRAG**     | Chunk (FromRel) + Entity (RelNode) + Relationship (VDB)                          |
 | **FastGraphRAG** | Chunk (Aggregator) + Entity (PPR) + Relationship (Aggregator)  |
 
+
+## 🏥 Medical Dataset Support
+
+GraphRAG now includes comprehensive support for medical datasets! We provide:
+
+- **Conversion Tool**: Easy-to-use converter for popular medical datasets (PubMedQA, MedQA, MedMCQA)
+- **Example Medical Dataset**: Ready-to-use dataset with 10 medical topics
+- **Bilingual Documentation**: Complete guides in English and Chinese
+
+### Quick Start with Medical Data
+
+```bash
+# Use the included medical example dataset
+python main.py -opt Option/Method/RAPTOR.yaml -dataset_name MedicalExample
+
+# Convert your own medical dataset
+python Data/convert_medical_dataset.py \
+    --source_type pubmedqa \
+    --source_path /path/to/pubmedqa.json \
+    --output_dir ./Data/PubMedQA
+```
+
+📖 **See detailed documentation**: [Medical Dataset Guide](./Data/MEDICAL_README.md)
 
 ## 🏹 Our future plans
 - [ ] Detailed readme
