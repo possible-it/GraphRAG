@@ -36,6 +36,7 @@
 
 - Download the datasets [GraphRAG-dataset](https://drive.google.com/file/d/14nYYw-3FutumQnSRwKavIbG3LRSmIzDX/view?usp=sharing)
 
+- **🏥 Medical Dataset Conversion**: See [Medical Dataset Guide](./Data/MEDICAL_README.md) for converting medical datasets (PubMedQA, MedQA, etc.) to GraphRAG format
 
 
 
